@@ -13,7 +13,7 @@ from global_objects import *
 def cancel_confirm():
     """Cancel of reservation."""
 
-    cancel_menu = tkinter.Tk()
+    cancel_menu = tkinter.Toplevel()
     cancel_menu.overrideredirect(True)
     cancel_menu.configure(background='lightcyan')
     x = menu.winfo_screenwidth() // 2

@@ -118,7 +118,7 @@ def res_base(place, rate):
 def res_confirm():
     """Choosing a destination."""
     global res_menu
-    res_menu = tkinter.Tk()
+    res_menu = tkinter.Toplevel()
     res_menu.overrideredirect(True)
     res_menu.configure(background='lightcyan')
     x = menu.winfo_screenwidth() // 2
