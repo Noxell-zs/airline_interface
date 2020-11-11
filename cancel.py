@@ -52,6 +52,7 @@ def cancel_confirm():
                  f'{i.place}. Место {i.num}. Стоимость билета '
                  f'{i.price:.2f} руб.',
             value=n,
+            justify=tkinter.LEFT,
             variable=selected,
             background='lightcyan'))
 

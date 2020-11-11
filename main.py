@@ -12,7 +12,7 @@ Run the main program:
 
 """
 
-
+import about_box
 from global_objects import *
 from reservation import res_confirm
 from cancel import cancel_confirm
@@ -50,6 +50,13 @@ def main():
                               foreground='azure',
                               command=menu.destroy)
     btn_exit.pack(pady=5)
+
+    about = tkinter.Button(menu,
+                           text="О программе",
+                           background='darkblue',
+                           foreground='azure',
+                           command=about_box.main)
+    about.pack(expand=1, anchor=tkinter.SW)
 
     menu.mainloop()
 
